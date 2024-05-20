@@ -1,0 +1,46 @@
+{
+  "problem_id": 134,
+  "problem": "concatenate",
+  "method": "def concatenate(strings: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> concatenate([])\n    ''\n    >>> concatenate(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(strings)",
+  "tests": [
+    {
+      "test": "def test():\n        assert concatenate([]) == ''",
+      "coverage_sequence": [
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">"
+      ]
+    },
+    {
+      "test": "def test():\n        assert concatenate(['x', 'y', 'z']) == 'xyz'",
+      "coverage_sequence": [
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">"
+      ]
+    },
+    {
+      "test": "def test():\n        assert concatenate(['x', 'y', 'z', 'w', 'k']) == 'xyzwk'",
+      "coverage_sequence": [
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">"
+      ]
+    }
+  ]
+}

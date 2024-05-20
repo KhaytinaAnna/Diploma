@@ -1,0 +1,161 @@
+{
+  "problem_id": 135,
+  "problem": "same_chars",
+  "method": "def same_chars(s0: str, s1: str):\n    \"\"\"\n    Check if two words have the same characters.\n    >>> same_chars('eabcdzzzz', 'dddzzzzzzzddeddabc')\n    True\n    >>> same_chars('abcd', 'dddddddabc')\n    True\n    >>> same_chars('dddddddabc', 'abcd')\n    True\n    >>> same_chars('eabcd', 'dddddddabc')\n    False\n    >>> same_chars('abcd', 'dddddddabce')\n    False\n    >>> same_chars('eabcdzzzz', 'dddzzzzzzzddddabc')\n    False\n    \"\"\"\n    return set(s0) == set(s1)",
+  "tests": [
+    {
+      "test": "def test():\n        assert same_chars('abcd', 'dddddddabcf') == False",
+      "coverage_sequence": [
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">"
+      ]
+    },
+    {
+      "test": "def test():\n        assert same_chars('eabcd', 'dddddddabc') == False",
+      "coverage_sequence": [
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">"
+      ]
+    },
+    {
+      "test": "def test():\n        assert same_chars('eabcdzzzz', 'dddzzzzzzzddddabc') == False",
+      "coverage_sequence": [
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">"
+      ]
+    },
+    {
+      "test": "def test():\n        assert same_chars('aabb', 'aaccc') == False",
+      "coverage_sequence": [
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">"
+      ]
+    },
+    {
+      "test": "def test():\n        assert same_chars('dddddddabc', 'abcd') == True",
+      "coverage_sequence": [
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">"
+      ]
+    },
+    {
+      "test": "def test():\n        assert same_chars('abcd', 'dddddddabc') == True",
+      "coverage_sequence": [
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">"
+      ]
+    },
+    {
+      "test": "def test():\n        assert same_chars('eabcdzzzz', 'dddzzzzzzzddeddabc') == True",
+      "coverage_sequence": [
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">"
+      ]
+    }
+  ]
+}

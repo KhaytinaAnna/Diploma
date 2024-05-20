@@ -1,0 +1,92 @@
+{
+  "problem_id": 53,
+  "problem": "generate_integers",
+  "method": "def generate_integers(a, b):\n    \"\"\"\n    Given two positive integers a and b, return the even digits between a\n    and b, in ascending order.\n    For example:\n    generate_integers(2, 8) => [2, 4, 6, 8]\n    generate_integers(8, 2) => [2, 4, 6, 8]\n    generate_integers(10, 14) => []\n    \"\"\"\n    lower = max(2, min(a, b))\n    upper = min(8, max(a, b))\n    return [i for i in range(lower, upper+1) if i % 2 == 0]",
+  "tests": [
+    {
+      "test": "def test():\n        assert generate_integers(17,89) == [], \"Test 4\"",
+      "coverage_sequence": [
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">"
+      ]
+    },
+    {
+      "test": "def test():\n        assert generate_integers(132, 2) == [2, 4, 6, 8], \"Test 3\"",
+      "coverage_sequence": [
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">"
+      ]
+    },
+    {
+      "test": "def test():\n        assert generate_integers(10, 2) == [2, 4, 6, 8], \"Test 2\"",
+      "coverage_sequence": [
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">"
+      ]
+    },
+    {
+      "test": "def test():\n        assert True, \"This prints if this assert fails 2 (also good for debugging!)\"",
+      "coverage_sequence": [
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        "!",
+        "!",
+        "!"
+      ]
+    },
+    {
+      "test": "def test():\n        assert generate_integers(2, 10) == [2, 4, 6, 8], \"Test 1\"",
+      "coverage_sequence": [
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">"
+      ]
+    }
+  ]
+}

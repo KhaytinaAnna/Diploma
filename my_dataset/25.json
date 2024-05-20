@@ -1,0 +1,343 @@
+{
+  "problem_id": 25,
+  "problem": "prime_length",
+  "method": "def prime_length(string):\n    \"\"\"Write a function that takes a string and returns True if the string\n    length is a prime number or False otherwise\n    Examples\n    prime_length('Hello') == True\n    prime_length('abcdcba') == True\n    prime_length('kittens') == True\n    prime_length('orange') == False\n    \"\"\"\n    l = len(string)\n    if l == 0 or l == 1:\n        return False\n    for i in range(2, l):\n        if l % i == 0:\n            return False\n    return True",
+  "tests": [
+    {
+      "test": "def test():\n        assert prime_length('Madam') == True",
+      "coverage_sequence": [
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        "!",
+        ">",
+        ">",
+        "!",
+        ">"
+      ]
+    },
+    {
+      "test": "def test():\n        assert prime_length('M') == False",
+      "coverage_sequence": [
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        "!",
+        "!",
+        "!",
+        "!"
+      ]
+    },
+    {
+      "test": "def test():\n        assert prime_length('wow') == True",
+      "coverage_sequence": [
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        "!",
+        ">",
+        ">",
+        "!",
+        ">"
+      ]
+    },
+    {
+      "test": "def test():\n        assert prime_length('orange') == False",
+      "coverage_sequence": [
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        "!",
+        ">",
+        ">",
+        ">",
+        "!"
+      ]
+    },
+    {
+      "test": "def test():\n        assert prime_length('0') == False",
+      "coverage_sequence": [
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        "!",
+        "!",
+        "!",
+        "!"
+      ]
+    },
+    {
+      "test": "def test():\n        assert prime_length('go') == True",
+      "coverage_sequence": [
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        "!",
+        ">",
+        "!",
+        "!",
+        ">"
+      ]
+    },
+    {
+      "test": "def test():\n        assert prime_length('HI') == True",
+      "coverage_sequence": [
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        "!",
+        ">",
+        "!",
+        "!",
+        ">"
+      ]
+    },
+    {
+      "test": "def test():\n        assert prime_length('gogo') == False",
+      "coverage_sequence": [
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        "!",
+        ">",
+        ">",
+        ">",
+        "!"
+      ]
+    },
+    {
+      "test": "def test():\n        assert prime_length('aaaaaaaaaaaaaaa') == False",
+      "coverage_sequence": [
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        "!",
+        ">",
+        ">",
+        ">",
+        "!"
+      ]
+    },
+    {
+      "test": "def test():\n        assert prime_length('') == False",
+      "coverage_sequence": [
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        "!",
+        "!",
+        "!",
+        "!"
+      ]
+    },
+    {
+      "test": "def test():\n        assert prime_length('Hello') == True",
+      "coverage_sequence": [
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        "!",
+        ">",
+        ">",
+        "!",
+        ">"
+      ]
+    },
+    {
+      "test": "def test():\n        assert prime_length('Wow') == True",
+      "coverage_sequence": [
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        "!",
+        ">",
+        ">",
+        "!",
+        ">"
+      ]
+    },
+    {
+      "test": "def test():\n        assert prime_length('world') == True",
+      "coverage_sequence": [
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        "!",
+        ">",
+        ">",
+        "!",
+        ">"
+      ]
+    },
+    {
+      "test": "def test():\n        assert prime_length('kittens') == True",
+      "coverage_sequence": [
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        "!",
+        ">",
+        ">",
+        "!",
+        ">"
+      ]
+    },
+    {
+      "test": "def test():\n        assert prime_length('abcdcba') == True",
+      "coverage_sequence": [
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        "!",
+        ">",
+        ">",
+        "!",
+        ">"
+      ]
+    },
+    {
+      "test": "def test():\n        assert prime_length('MadaM') == True",
+      "coverage_sequence": [
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        "!",
+        ">",
+        ">",
+        "!",
+        ">"
+      ]
+    }
+  ]
+}

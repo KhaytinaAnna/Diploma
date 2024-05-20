@@ -1,0 +1,58 @@
+{
+  "problem_id": 42,
+  "problem": "string_xor",
+  "method": "def string_xor(a: str, b: str) -> str:\n    \"\"\" Input are two strings a and b consisting only of 1s and 0s.\n    Perform binary XOR on these inputs and return result also as a string.\n    >>> string_xor('010', '110')\n    '100'\n    \"\"\"\n    def xor(i, j):\n        if i == j:\n            return '0'\n        else:\n            return '1'\n    return ''.join(xor(x, y) for x, y in zip(a, b))",
+  "tests": [
+    {
+      "test": "def test():\n        assert string_xor('111000', '101010') == '010010'",
+      "coverage_sequence": [
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">"
+      ]
+    },
+    {
+      "test": "def test():\n        assert string_xor('0101', '0000') == '0101'",
+      "coverage_sequence": [
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">"
+      ]
+    },
+    {
+      "test": "def test():\n        assert string_xor('1', '1') == '0'",
+      "coverage_sequence": [
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        "!",
+        "!",
+        ">"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "problem_id": 98,
+  "problem": "below_zero",
+  "method": "def below_zero(operations: List[int]) -> bool:\n    \"\"\" You're given a list of deposit and withdrawal operations on a bank account that starts with\n    zero balance. Your task is to detect if at any point the balance of account fallls below zero, and\n    at that point function should return True. Otherwise it should return False.\n    >>> below_zero([1, 2, 3])\n    False\n    >>> below_zero([1, 2, -4, 5])\n    True\n    \"\"\"\n    balance = 0\n    for op in operations:\n        balance += op\n        if balance < 0:\n            return True\n    return False",
+  "tests": [
+    {
+      "test": "def test():\n        assert below_zero([1, -1, 2, -2, 5, -5, 4, -4]) == False",
+      "coverage_sequence": [
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        "!",
+        ">"
+      ]
+    },
+    {
+      "test": "def test():\n        assert below_zero([1, 2, -4, 5, 6]) == True",
+      "coverage_sequence": [
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        "!"
+      ]
+    },
+    {
+      "test": "def test():\n        assert below_zero([]) == False",
+      "coverage_sequence": [
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        "!",
+        "!",
+        "!",
+        ">"
+      ]
+    },
+    {
+      "test": "def test():\n        assert below_zero([1, 2, -3, 1, 2, -3]) == False",
+      "coverage_sequence": [
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        "!",
+        ">"
+      ]
+    },
+    {
+      "test": "def test():\n        assert below_zero([1, -2, 2, -2, 5, -5, 4, -4]) == True",
+      "coverage_sequence": [
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        "!"
+      ]
+    },
+    {
+      "test": "def test():\n        assert below_zero([1, -1, 2, -2, 5, -5, 4, -5]) == True",
+      "coverage_sequence": [
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        "!"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "problem_id": 26,
+  "problem": "count_distinct_characters",
+  "method": "def count_distinct_characters(string: str) -> int:\n    \"\"\" Given a string, find out how many distinct characters (regardless of case) does it consist of\n    >>> count_distinct_characters('xyzXYZ')\n    3\n    >>> count_distinct_characters('Jerry')\n    4\n    \"\"\"\n    return len(set(string.lower()))",
+  "tests": [
+    {
+      "test": "def test():\n        assert count_distinct_characters('abcde') == 5",
+      "coverage_sequence": [
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">"
+      ]
+    },
+    {
+      "test": "def test():\n        assert count_distinct_characters('abcde' + 'cade' + 'CADE') == 5",
+      "coverage_sequence": [
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">"
+      ]
+    },
+    {
+      "test": "def test():\n        assert count_distinct_characters('Jerry jERRY JeRRRY') == 5",
+      "coverage_sequence": [
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">"
+      ]
+    },
+    {
+      "test": "def test():\n        assert count_distinct_characters('aaaaAAAAaaaa') == 1",
+      "coverage_sequence": [
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">"
+      ]
+    },
+    {
+      "test": "def test():\n        assert count_distinct_characters('') == 0",
+      "coverage_sequence": [
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">"
+      ]
+    }
+  ]
+}

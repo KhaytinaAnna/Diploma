@@ -1,0 +1,59 @@
+{
+  "problem_id": 20,
+  "problem": "string_to_md5",
+  "method": "def string_to_md5(text):\n    \"\"\"\n    Given a string 'text', return its md5 hash equivalent string.\n    If 'text' is an empty string, return None.\n    >>> string_to_md5('Hello world') == '3e25960a79dbc69b674cd4ec67a72c62'\n    \"\"\"\n    import hashlib\n    return hashlib.md5(text.encode('ascii')).hexdigest() if text else None",
+  "tests": [
+    {
+      "test": "def test():\n        assert string_to_md5('A B C') == '0ef78513b0cb8cef12743f5aeb35f888'",
+      "coverage_sequence": [
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">"
+      ]
+    },
+    {
+      "test": "def test():\n        assert string_to_md5('') == None",
+      "coverage_sequence": [
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">"
+      ]
+    },
+    {
+      "test": "def test():\n        assert string_to_md5('Hello world') == '3e25960a79dbc69b674cd4ec67a72c62'",
+      "coverage_sequence": [
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">"
+      ]
+    },
+    {
+      "test": "def test():\n        assert string_to_md5('password') == '5f4dcc3b5aa765d61d8327deb882cf99'",
+      "coverage_sequence": [
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">",
+        ">"
+      ]
+    }
+  ]
+}

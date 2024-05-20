@@ -1,0 +1,3 @@
+{
+    "result": "```python\nsame_chars('eabcdzzzz', 'dddzzzzzzzddeddabc')\nsame_chars('abcd', 'dddddddabc')\nsame_chars('dddddddabc', 'abcd')\nsame_chars('eabcd', 'dddddddabc')\nsame_chars('abcd', 'dddddddabce')\nsame_chars('eabcdzzzz', 'dddzzzzzzzddddabc')\n```"
+}
