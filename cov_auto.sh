@@ -14,9 +14,11 @@ for ((i=START_TEST; i<=END_TEST; i++)); do
         if [ -f "res_dataset/${i}/${i}_${j}_code.py" ]; then
             coverage run res_dataset/${i}/${i}_${j}_code.py;
             coverage html -d res_dataset/${i}/${i}_${j}_code_coverage/;
+            coverage annotate -d res_dataset/${i}/${i}_${j}_code_coverage/;
         else
             break;
         fi
     done
 done
 
+# python3 accuracy.py;
